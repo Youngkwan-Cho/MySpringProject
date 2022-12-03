@@ -44,4 +44,22 @@
             <version>${org.springframework-version}</version>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>p3_21900706_2</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <configuration>
+                <release>1.8</release>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
+        </plugin>
+    </plugins>
+    </build>
 </project>
