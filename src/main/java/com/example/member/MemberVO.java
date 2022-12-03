@@ -1,4 +1,4 @@
-package com.example.crud;
+package com.example.member;
 
 import java.util.Date;
 
@@ -8,11 +8,14 @@ public class MemberVO {
 	private String username;
 	private String password;
 	private String email;
-	private String blogurl;
-	private String photo;
-	private String detail;
+	private String sex;
+	private String address;
+	private String phone;
 	private Date regdate;
+	private int age;
 
+	public int getAge() { return age;}
+	public void setAge(int age) { this.age = age;	}
 	public int getSid() {
 		return sid;
 	}
@@ -32,7 +35,6 @@ public class MemberVO {
 	public String getUsername() {
 		return username;
 	}
-
 	public void setUsername(String username) {
 		this.username = username;
 	}
@@ -53,34 +55,32 @@ public class MemberVO {
 		this.email = email;
 	}
 
-	public String getBlogurl() {
-		return blogurl;
+	public String getSex() {
+		return sex;
 	}
 
-	public void setBlogurl(String blogurl) {
-		this.blogurl = blogurl;
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 
-	public String getPhoto() {
-		return photo;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setPhoto(String photo) {
-		this.photo = photo;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
-	public String getDetail() {
-		return detail;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setDetail(String detail) {
-		this.detail = detail;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-
 	public Date getRegdate() {
 		return regdate;
 	}
-
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
